@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\curso-js-desde-0"
+		},
+		{
+			"path": "..\\curso-html"
+		},
+		{
+			"path": "..\\curso-js-avanzado"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "curso-js-avanzado"
+	}
+}
