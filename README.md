@@ -8,7 +8,7 @@ _https://bittersweetstudios.000webhostapp.com/_
 
 ## Construido con 🛠️
 
-* [HTML, CSS, JS](https://code.visualstudio.com/) - IDE
+* [Visual Studio Code](https://code.visualstudio.com/) - HTML, CSS, JS
 * [Adobe Photoshop](https://www.adobe.com/la/products/photoshop.html) - Editor de Imagenes
 
 ## Autores ✒️
