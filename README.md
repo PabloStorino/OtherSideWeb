@@ -1,6 +1,6 @@
 # OtherSideWeb
 
-Proyecto web para la serie animada OtherSide, del estudio de animacion mexicano BitterStudios. Pero ante todo un proyecto de amigo a amigo.
+Proyecto web para crear una pagina de la serie OtherSide, del estudio de animacion mexicano BitterSweet. Pero ante todo un proyecto para un amigo.
 
 ## Despliegue 📦
 
