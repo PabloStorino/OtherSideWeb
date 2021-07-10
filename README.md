@@ -13,7 +13,7 @@ _https://bittersweetstudios.000webhostapp.com/_
 
 ## Autores ✒️
 
-* **Pablo Altamirano Storino** - *Desarrollo* - [Pablo Storino](https://github.com/PabloStorino)
+* **Pablo Altamirano Storino** - *Desarrollo*
 
 ## Gracias: 🎁
 
