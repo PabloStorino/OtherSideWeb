@@ -1,22 +1,50 @@
-body {
+*{
+    box-sizing: border-box;
+}
+
+.page-wrapper{
     margin: 0px;
-    background: #FDF0D5;
-    color: rgb(0, 0, 0);
+    margin-bottom: 30px;
+    min-width: 100vh;
+    min-height: 100vh;    
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.page-content{    
+    max-width: 1170px;
+    min-height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;   
+    box-shadow: 0px 0px 25px; 
+}
+
+body {
+    margin: 0px;  
+    padding: 0px;  
+    min-height: 100%;
     font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+    background-image: url(/img/coffebackground.png);
+    background-repeat: no-repeat;
+    background-size: 3000px 1744px;
+}
+
+main{
+    padding: 1em;
+    background-color:rgba(253,240,213,1);
 }
 
 /*Contenedores*/
 
 header{
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.241);
+    background-color: rgba(0, 0, 0, 0.303);
     text-align: center;
-    background-image: url(/img/coffebackground.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
+    color: white; 
+    min-height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 header a{
@@ -26,58 +54,54 @@ header a{
 .header-background{    
     margin: 0px;
     padding: 25px;
-    background-color: rgba(0, 0, 0, 0.5);
-    grid-template-rows: 1fr 20px;
 }
 
 #header-text{
     margin: 0px;
+    font-size: 1.5em;
 }
 
-main{
-    padding: 5px;
-}
-
-#ancla{
+#pages{
     text-align: center;
 }
+
+#pages > li > a:hover{
+    color: orange;
+}
+
+/* #pages > li >  {
+    color: orange;
+} */
 
 footer{ 
     background-color:rgb(0, 0, 0);
     padding: 10px;
+    height: 40px;
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
 }
 
 footer p{
     text-align: center;    
     color: blanchedalmond;
     margin: 0px;
+    font-size: small;
 }
 
-.navegacion1{
-    position: fixed;
-    width: 100%;    
-    text-align: left;
-    background-color: rgba(0, 0, 0, 0.775);
-    padding: 15px;
-}
-
-.navegacion1 a{    
-    text-transform: uppercase;
-    color: rgb(255, 166, 0);
-}
-
-.navegacion1 ul{
-    margin:0px;
-}
-
-.navegacion1 li {    
-    display: inline-block;
-    padding: 5px;
-}
+/*Navbars*/
 
 .navegacion2{
     background-color: rgb(0, 0, 0);
-    padding: 10px;
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
 }
 
 .navegacion2 > ul {
@@ -89,11 +113,73 @@ footer p{
     margin: 10px;
 }
 
+.navegacion2 > ul > li a:hover{
+    color: orange;
+}
+
 .navegacion2 > ul > li > a { 
     color: rgb(255, 255, 255);
 }
 
+#navicon{
+    width: 50px;
+}
+
+.navegacion3{
+    background-color: rgb(68, 68, 68);
+    padding: 10px;
+}
+
+.navegacion3 > ul {
+    margin: 0%;
+    padding: 0px;
+}
+.navegacion3 > ul > li{
+    display: inline-block;
+    margin: 10px;
+}
+
+.navegacion3 > ul > li > a { 
+    color: rgb(255, 255, 255);
+}
+
+.ancla{
+    text-align: center;
+}
+
+#socialmedia {
+    margin: 0px;
+    margin-top: 15px;
+}
+
+#socialmedia > li {
+    display: inline-block;
+    margin: 7px;
+}
+
+
 /*Meet the cast*/
+
+.crewbottom{
+    grid-row: 2/3;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+}
+
+.crewtop{
+    grid-row: 1/2;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.castname{
+    font-weight: bold;
+    font-size: 27px;
+    font-family: 'Nerko One', cursive;
+}
 
 .casttext{
     width: 75%;
@@ -110,7 +196,13 @@ footer p{
 .cast-wrapper{
     display:flex;       
     flex-wrap: wrap;
-    justify-content: space-evenly;  
+    justify-content: space-evenly;      
+}
+
+.cast-wrapper2{
+    display:flex;       
+    flex-wrap: wrap;
+    justify-content: center;  
 }
 
 .castbox{
@@ -120,18 +212,49 @@ footer p{
     align-items: center;
 }
 
-/*What is it about*/
-
-.infowrapper{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr)
+#cast{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.infotext{
+.charImg{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.charImg2{
+    width: 150px;
+    height: 150px;
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.397);
+}
+/*What is it about*/
+
+.info h2 {
+    margin-bottom: 2px;
+}
+
+.infowrapper{
+    align-items: center;
+    display: grid;
+    grid-template-columns: 15% 1fr 15%;
+}
+
+.infomain{
     text-align: center;
     font-size: 20px;
     grid-column-start: 2;
-    grid-column-end: 5;
+    grid-column-end: 3;
+}
+
+.infomain p{
+    margin-bottom: 0px;
+}
+
+#cafe{
+    width: 25%;
 }
 
 /*Crew*/
@@ -140,6 +263,8 @@ footer p{
     display: flex;
     align-items: center;
     justify-content: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
 }
 
 .crewimg{
@@ -180,38 +305,18 @@ p{
 
 /*Imagenes*/
 
-.cast{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.charImg{
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-}
-
 .separador{
     clear: both;
 }
 
-#logo{
-    width: 50%;
+.responsiveimage{
+    max-width: 100%;
 }
 /*Links*/
 
 a{
     color: rgb(0, 0, 0);
     text-decoration: none;
-}
-
-a:link{
-    color: rgb(65, 65, 65);
-}
-
-a:hover{
-    color: #c7c7c7;
 }
 
 a:active{
@@ -227,10 +332,6 @@ a:active{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-}
-
-.mediabox{
-    
 }
 
 .mediatitle{
