@@ -56,12 +56,32 @@ a{
     text-decoration: none;
 }
 
+/* || Easteregg */
+
+.easteregg{
+    display:flex;
+    justify-content: center;
+}
+
+.easteregg img:last-child{
+    display: none;
+}
+
+.easteregg:hover img:last-child{
+    display: block;
+}
+
+.easteregg:hover img:first-child{
+    display: none;
+}
+
+
 /* || Navbar */
 .navbar{
     width: 100%;
     background-color: rgba(0, 0, 0, 0.788);
     text-align: center;
-    box-shadow: 0px 0px 5px black;    
+    box-shadow: 0px 0px 5px black;  
 }
 
 .navbar-pages > li{
@@ -70,6 +90,10 @@ a{
 
 .navbar-pages > li > a{
     color: rgb(255, 255, 255);
+}
+
+.navbar-brand{
+    width: 10%;
 }
 
 /* || Footer */
@@ -103,6 +127,24 @@ footer{
     border-radius: 5%;
 }
 
+.img-small{
+    max-width: 30%;
+}
+
+.cumster{
+    max-height: 50px;
+}
+
+.synopsis-logo{
+    max-width: 50%;
+}
+
+.synopsis-first{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* || .character-container */
 .character-container{
     display: flex;
@@ -117,21 +159,547 @@ footer{
     text-align: center;
 }
 
+/* || Iconos */
+.white-icon{
+    color: white;
+}
+
 /* --- MEDIA QUERIES --- */
 
 /* Large desktop */
 @media (min-width: 1200px) {
+    body{
+        background-image: url(/img/background-blur.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-size: 25px;
+    }
+
+    main{
+        background-color: #f7e6d3;
+        color: rgb(32, 32, 32);
+        width: 100%;
+        font-size: 0.8em; 
+        padding: 1%;
+        margin-top: 7vh;
+        display: flex;
+        flex-direction: column;
+        overflow-y:auto; 
+    }
+
+    main > p {
+        margin: 0px;
+    }    
+
+    .synopsis-main{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
     
+    .synopsis-right{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .synopsis-main > p {
+        margin: 3%;
+    }
+
+    .synopsis-char{
+        display: flex;
+    }
+
+    .navbar{    
+        font-size: 0.7em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        height: 5vh;
+    }
+
+    .navbar > ul > li > a:hover{
+        color: coral;
+    }
+
+    .navbar-brand{
+        display: none;
+    }
+
+    .navbar-pages{
+        width: 100%;
+    }
+
+    .navbar-pages > li {
+        margin: 0.7%;
+    }
+
+    .navbar-pages > li > p{
+        color: rgb(255, 255, 255);
+    }
+
+    footer{
+        font-size: 0.5em;  
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        height: 30px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        margin-bottom: 0px;
+    }
+
+    footer > p{
+        margin: 0px;
+    }
+
+    .main-container{
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-bottom: 0%;
+        padding-top: 1%;
+        background-color: rgba(0, 0, 0, 0.61);
+        min-height: 100vh;
+    }
+
+    .img-synopsis{
+        display: none;
+    }
+
+    .img-synopsislg{
+        max-width: 30%;
+    }
+
+    .main-container-iframe{
+        padding: 0px;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .landing{
+        background-color: rgba(0, 0, 0, 0.308);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 5%;
+        padding-bottom: 0px;
+        padding-top: 0px;
+        min-height: 100vh;
+    }
+
+    .social-media{
+        text-align: center;
+    }
+
+    .social-media > li{
+        margin: 2%;
+    }
+
+    .orange-icon{
+        color: orange;
+    }
+
+    .crew-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .character-container{
+        display: none;
+    }
+
+    .crew-container{
+        margin-top: 5%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .crew-member{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 3%;
+        max-width: 20%;
+    }
+
+    .crew-member > p {
+        margin: 1%;
+    }
+
+    .crew-member > .font-nerko{
+        font-size: 1.3em;
+    }
+
+    .crew-right{
+        max-width: 75%;
+    }
+
+    .title-sm{
+        font-size: 3em;
+    }
+
+    .img-small{
+        display: none;
+    }
+
+    .title-sm{
+        margin: 0px;
+        margin-top: 3%;
+    }
+
+    .indextext:hover span{
+        display: none;
+    }
+
+    .indextext:hover::before{
+        content: "An animated (furry) web series.";
+    }
+
+    .synopsis-sm{
+        display: none;
+    }
+
+    .synopsis-lg{
+        display: flex;
+    }
+
+    .social-text{
+        display: flex;
+    }
 }
 
 /* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) {
-    
+@media (min-width: 768px) and (max-width: 1200px) {
+    body{
+        display: grid;
+        grid-template-rows: 10vh 1fr 7vh;
+        background-image: url(/img/background-blur.png);
+        background-position: center;
+        background-size: cover;
+        font-size: 25px;
+    }
+
+    main{
+        background-color: #f7e6d3;
+        color: rgb(32, 32, 32);
+        width: 100%;
+        font-size: 0.8em; 
+        min-height: 81vh; 
+        max-height: 81vh; 
+        padding: 5%;
+        padding-bottom: 0%;
+        overflow-y:auto;      
+    }
+
+    main > p {
+        margin: 0px;
+    }    
+
+    .social-text{
+        flex-direction: column;        
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .img-synopsislg{
+        display: none;
+    }
+
+    .navbar{
+        padding: 3%;
+        font-size: 1.1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar-pages{
+        width: 90%;
+    }
+
+    .navbar-pages > li {
+        margin: 2%;
+    }
+
+    .navbar-pages > li > p{
+        color: rgb(255, 255, 255);
+    }
+
+    footer{
+        font-size: 0.7em;  
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer > p{
+        margin: 0px;
+    }
+
+    .main-container{
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-bottom: 0%;
+        padding-top: 1%;
+        background-color: rgba(0, 0, 0, 0.61);
+    }
+
+    .main-container-iframe{
+        padding: 0px;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .landing{
+        background-color: rgba(0, 0, 0, 0.308);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 5%;
+        padding-bottom: 0px;
+        padding-top: 0px;
+    }
+
+    .social-media{
+        text-align: center;
+    }
+
+    .social-media > li{
+        margin: 2%;
+    }
+
+    .orange-icon{
+        color: orange;
+    }
+
+    .character-container{
+        margin-top: 5%;        
+        align-items: center;
+        justify-content: center;
+    }
+
+    .character-box{
+        margin-bottom: 5%;;
+    }
+
+    .char-name{
+        font-size: 1.5em;
+    }
+
+    .crew-container{
+        margin-top: 10%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .crew-member{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 7%;
+    }
+
+    .crew-member > p {
+        margin: 2%;
+    }
+
+    .crew-member > .font-nerko{
+        font-size: 1.3em;
+    }
+
+    .crew-right{
+        display: none;
+    }
+
+    .crew-member .img-medium{
+        display: none;
+    }
+
+    .synopsis-lg{
+        display: none;
+    }
 }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
-    
+    body{
+        display: grid;
+        grid-template-rows: 10vh 1fr 7vh;
+        background-image: url(/img/background-blur.png);
+        background-position: center;
+        background-size: cover;
+    }
+
+    main{
+        background-color: #f7e6d3;
+        color: rgb(32, 32, 32);
+        width: 100%;
+        font-size: 0.8em; 
+        min-height: 81vh; 
+        max-height: 81vh; 
+        padding: 5%;
+        padding-bottom: 0%;
+        overflow-y:auto;      
+    }
+
+    main > p {
+        margin: 0px;
+    }    
+
+    .social-text{
+        flex-direction: column;        
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .img-synopsislg{
+        display: none;
+    }
+
+    .navbar{
+        padding: 3%;
+        font-size: 0.9em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar-pages{
+        width: 90%;
+    }
+
+    .navbar-pages > li {
+        margin: 2%;
+    }
+
+    .navbar-pages > li > p{
+        color: rgb(255, 255, 255);
+    }
+
+    footer{
+        font-size: 0.5em;  
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer > p{
+        margin: 0px;
+    }
+
+    .main-container{
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-bottom: 0%;
+        padding-top: 1%;
+        background-color: rgba(0, 0, 0, 0.61);
+    }
+
+    .main-container-iframe{
+        padding: 0px;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .landing{
+        background-color: rgba(0, 0, 0, 0.308);
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 5%;
+        padding-bottom: 0px;
+        padding-top: 0px;
+    }
+
+    .social-media{
+        text-align: center;
+    }
+
+    .social-media > li{
+        margin: 2%;
+    }
+
+    .orange-icon{
+        color: orange;
+    }
+
+    .character-container{
+        margin-top: 5%;        
+        align-items: center;
+        justify-content: center;
+    }
+
+    .character-box{
+        margin-bottom: 5%;;
+    }
+
+    .char-name{
+        font-size: 1.5em;
+    }
+
+    .crew-container{
+        margin-top: 10%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .crew-member{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 7%;
+    }
+
+    .crew-member > p {
+        margin: 2%;
+    }
+
+    .crew-member > .font-nerko{
+        font-size: 1.3em;
+    }
+
+    .crew-right{
+        display: none;
+    }
+
+    .crew-member .img-medium{
+        display: none;
+    }
+
+    .synopsis-lg{
+        display: none;
+    }
 }
 
 /* Landscape phones and down */
@@ -158,13 +726,25 @@ footer{
 
     main > p {
         margin: 0px;
+    }    
+
+    .img-synopsislg{
+        display: none;
     }
-    
 
     .navbar{
-        padding: 5%;
-        font-size: 0.8em;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        font-size: 0.7em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
+
+    .navbar-pages{
+        width: 95%;
+    }
+
     .navbar-pages > li {
         margin: 2%;
     }
@@ -253,6 +833,18 @@ footer{
 
     .crew-member > .font-nerko{
         font-size: 1.3em;
+    }
+
+    .crew-right{
+        display: none;
+    }
+
+    .crew-member .img-medium{
+        display: none;
+    }
+
+    .synopsis-lg{
+        display: none;
     }
 }
 
