@@ -131,6 +131,16 @@ footer{
     max-width: 30%;
 }
 
+.img-char{
+    max-width: 15%;
+    box-shadow: 1px 1px 9px black;
+}
+
+.img-char-lg{
+    max-width: 125px;
+    box-shadow: 1px 1px 9px black;
+}
+
 .cumster{
     max-height: 50px;
 }
@@ -176,6 +186,15 @@ footer{
         font-size: 25px;
     }
 
+    .synopsis{       
+        background-image: url("/img/coffebackground3.png");
+        background-repeat: no-repeat;
+    }
+
+    .synopsis .main-container{
+        background-color:rgba(0, 0, 0, 0.37);
+    }
+
     main{
         background-color: #f7e6d3;
         color: rgb(32, 32, 32);
@@ -188,6 +207,11 @@ footer{
         overflow-y:auto; 
     }
 
+    .synopsis main{
+        background-color: rgba(165, 42, 42, 0);
+        box-shadow: none;
+    }
+
     main > p {
         margin: 0px;
     }    
@@ -196,12 +220,7 @@ footer{
         display: flex;
         align-items: center;
         justify-content: space-around;
-    }
-    
-    .synopsis-right{
-        display: flex;
-        flex-direction: column;
-    }
+    }    
 
     .synopsis-main > p {
         margin: 3%;
@@ -210,6 +229,81 @@ footer{
     .synopsis-char{
         display: flex;
     }
+
+    .synopsis-first{
+        padding-top: 50px;  
+        box-shadow: 0px 0px 9px rgb(33, 33, 33);  
+        max-width: 75%;
+        margin-top: 2%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: left;
+        background-color: #f7e6d3;
+        color: rgb(0, 0, 0);       
+    }
+
+    .synopsis-second{      
+        box-shadow: 0px 0px 9px black;  
+        max-width: 75%;
+        margin-top: 2%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: left;
+        background-color: rgb(255, 246, 236);
+        color: rgb(0, 0, 0);        
+    }
+    
+    .synopsis-third{      
+        box-shadow: 0px 0px 9px rgb(33, 33, 33);  
+        max-width: 75%;
+        margin-top: 2%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: left;
+        background-color: rgb(255, 246, 236);
+        color: rgb(0, 0, 0);        
+    }
+
+    .second-char{
+        margin: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    .synopsis-text{
+        max-width: 50%;
+        margin-top: 35px;
+        color: rgb(0, 0, 0);
+        text-align: center;
+    }
+
+    .char-text-lg{
+        margin: 25px;
+        font-style: italic;
+    }
+
+    .char-name-lg{
+        font-size: 1.5em;
+    }
+
+    .third-char{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .char-box-lg{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 20px;
+    }
+
 
     .navbar{    
         font-size: 0.7em;
@@ -373,11 +467,13 @@ footer{
 
     .synopsis-lg{
         display: flex;
+        flex-direction: column;
     }
 
     .social-text{
         display: flex;
     }
+
 }
 
 /* Portrait tablet to landscape and desktop */
