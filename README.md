@@ -4,7 +4,7 @@ Proyecto personal para un amigo, con el objetivo de crear un portal web para su 
 
 ## Despliegue 📦
 
-_https://bittersweetstudios.000webhostapp.com/_
+_https://othersideseries.000webhostapp.com/_
 
 ## Construido con 🛠️
 
@@ -17,6 +17,6 @@ _https://bittersweetstudios.000webhostapp.com/_
 
 ## Gracias: 🎁
 
-* A Santi, Gianluca y mis otros amigos que me bancaron como testers y criticos. Y a Mau por dejarme usar su serie como practica. ☕ 😊
+* A todos los chicos del discord que me bancaron como testers y criticos. Y a Mau por dejarme usar su serie como practica. ☕ 😊
 * Quien este leyendo el codigo, espero que le sirva de algo. 🤓.
 * Al usuario Villanuevand por su plantilla para readme. (https://github.com/Villanuevand) 😊
