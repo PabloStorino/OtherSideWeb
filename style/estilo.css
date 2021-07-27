@@ -183,6 +183,7 @@ footer{
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
+        background-attachment: fixed;
         font-size: 25px;
     }
 
@@ -210,6 +211,7 @@ footer{
     .synopsis{       
         background-image: url("/img/coffebackground3.png");
         background-repeat: no-repeat;
+        background-attachment: fixed;
     }
 
     .synopsis .main-container{
