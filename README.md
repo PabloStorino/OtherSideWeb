@@ -5,8 +5,7 @@ Proyecto personal para la empresa de animacion Mexicana de mi amigo Mauricio. Bi
 ## Despliegue 📦
 
 1) _https://othersideseries.000webhostapp.com/_
-2)
-3) _https://pablostorino.github.io/OtherSideWeb/_
+2) _https://pablostorino.github.io/OtherSideWeb/_
 
 ## Construido con 🛠️
 
